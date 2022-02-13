@@ -10,8 +10,8 @@ const products = require('./routes/products')
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(cors())
 app.use(bodyParser.json())
-app.use('/payment',cors(), payment)
-app.use('/api/products',cors(), products)
+app.use('/payment', payment)
+app.use('/api/products', products)
 
 
 const port = process.env.PORT || 5000
