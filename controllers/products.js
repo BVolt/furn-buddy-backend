@@ -21,7 +21,7 @@ const getByCategory = async(req, res) =>{
 }
 
 const getById = async(req, res) =>{
-    const id = req.params.category
+    const id = req.params.id
     try{
         const products = await Product.find({id})
         res.status(201).json({products})
